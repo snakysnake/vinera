@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservierung – VinerA | Italienisches Restaurant in Melk</title>
+  <meta name="description" content="Reservieren Sie Ihren Tisch im VinerA – Italienisches Restaurant in Melk. Öffnungszeiten: Di–Do & So 07:30–14:00, Fr & Sa 07:30–20:30. Jetzt online reservieren!">
+  <meta name="keywords" content="VinerA, Reservierung, Restaurant Melk, Italienisches Restaurant, Tisch reservieren, Melk, Schrattenbruck">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://reservieren.vinera.at/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tisch reservieren – VinerA Restaurant Melk">
+  <meta property="og:description" content="Reservieren Sie jetzt Ihren Tisch im VinerA – Italienisches Restaurant in Melk.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://reservieren.vinera.at/">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:site_name" content="VinerA">
+
+  <!-- Fonts: Cormorant Garamond (display) + Lato (body) — close to vinera.at's clean aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "VinerA",
+    "description": "Italienisches Restaurant in Melk – Genuss beginnt hier.",
+    "url": "https://vinera.at",
+    "telephone": "+436601144711",
+    "email": "office@vinera.at",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Weierbachweg 2",
+      "addressLocality": "Melk/Schrattenbruck",
+      "postalCode": "3390",
+      "addressCountry": "AT"
+    },
+    "servesCuisine": "Italian",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"],
+        "opens": "07:30",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "07:30",
+        "closes": "20:30"
+      }
+    ],
+    "acceptsReservations": "True"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: #2c2c2c;
+      background: #faf9f7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2.5rem 1rem 1.5rem;
+      background: #fff;
+      border-bottom: 1px solid #e8e4df;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #3a3a3a;
+    }
+
+    .header p {
+      margin-top: 0.4rem;
+      font-size: 0.95rem;
+      color: #7a7a7a;
+      letter-spacing: 0.04em;
+    }
+
+    .info-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 3rem;
+      padding: 1.2rem 1rem;
+      background: #fff;
+      border-bottom: 1px solid #e8e4df;
+      font-size: 0.88rem;
+      color: #5a5a5a;
+    }
+
+    .info-bar .group {
+      text-align: center;
+    }
+
+    .info-bar strong {
+      font-weight: 700;
+      color: #3a3a3a;
+      display: block;
+      margin-bottom: 0.15rem;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+    }
+
+    .info-bar a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .info-bar a:hover {
+      text-decoration: underline;
+    }
+
+    .iframe-wrap {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .iframe-wrap h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: #3a3a3a;
+    }
+
+    .iframe-wrap iframe {
+      width: 100%;
+      height: 750px;
+      border: 1px solid #e8e4df;
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.78rem;
+      color: #aaa;
+      border-top: 1px solid #e8e4df;
+    }
+
+    .footer a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      .info-bar {
+        gap: 1rem 1.5rem;
+        font-size: 0.82rem;
+      }
+
+      .iframe-wrap iframe {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>VinerA</h1>
+    <p>Italien mitten in Melk &middot; Genuss beginnt hier</p>
+  </header>
+
+  <nav class="info-bar" aria-label="Restaurantinformationen">
+    <div class="group">
+      <strong>Öffnungszeiten</strong>
+      Di–Do &amp; So: 07:30–14:00<br>
+      Fr &amp; Sa: 07:30–20:30<br>
+      Mo: Ruhetag
+    </div>
+    <div class="group">
+      <strong>Adresse</strong>
+      <a href="https://maps.google.com/?q=Weierbachweg+2+3390+Melk" target="_blank" rel="noopener">
+        Weierbachweg 2, 3390 Melk
+      </a>
+    </div>
+    <div class="group">
+      <strong>Kontakt</strong>
+      <a href="tel:+436601144711">+43 660 1144711</a><br>
+      <a href="mailto:office@vinera.at">office@vinera.at</a>
+    </div>
+  </nav>
+
+  <main class="iframe-wrap">
+    <h2>Tisch reservieren</h2>
+    <iframe
+      src="https://www.reservier.at/de/vinera"
+      title="Online-Reservierung VinerA Restaurant"
+      loading="lazy"
+      allow="clipboard-write"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 VinerA &middot;
+    <a href="https://vinera.at">vinera.at</a>
+  </footer>
+
+</body>
+</html>
