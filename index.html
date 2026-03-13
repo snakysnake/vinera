@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reservierung – VinerA | Italienisches Restaurant in Melk</title>
-  <meta name="description" content="Reservieren Sie Ihren Tisch im VinerA – Italienisches Restaurant in Melk. Öffnungszeiten: Di–Do & So 07:30–14:00, Fr & Sa 07:30–20:30. Jetzt online reservieren!">
-  <meta name="keywords" content="VinerA, Reservierung, Restaurant Melk, Italienisches Restaurant, Tisch reservieren, Melk, Schrattenbruck">
+  <title>Reservierung – Vinera | Italienisches Restaurant in Melk</title>
+  <meta name="description" content="Reservieren Sie Ihren Tisch im Vinera – Italienisches Restaurant in Melk. Öffnungszeiten: Di–Do & So 07:30–14:00, Fr & Sa 07:30–20:30. Jetzt online reservieren!">
+  <meta name="keywords" content="Vinera, Reservierung, Restaurant Melk, Italienisches Restaurant, Tisch reservieren, Melk, Schrattenbruck">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://reservieren.vinera.at/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Tisch reservieren – VinerA Restaurant Melk">
-  <meta property="og:description" content="Reservieren Sie jetzt Ihren Tisch im VinerA – Italienisches Restaurant in Melk.">
+  <meta property="og:title" content="Tisch reservieren – Vinera Restaurant Melk">
+  <meta property="og:description" content="Reservieren Sie jetzt Ihren Tisch im Vinera – Italienisches Restaurant in Melk.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://reservieren.vinera.at/">
   <meta property="og:locale" content="de_AT">
-  <meta property="og:site_name" content="VinerA">
+  <meta property="og:site_name" content="Vinera">
 
   <!-- Fonts: Cormorant Garamond (display) + Lato (body) — close to vinera.at's clean aesthetic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "VinerA",
+    "name": "Vinera",
     "description": "Italienisches Restaurant in Melk – Genuss beginnt hier.",
     "url": "https://vinera.at",
     "telephone": "+436601144711",
@@ -89,6 +89,20 @@
       border-bottom: 1px solid #e8e4df;
     }
 
+    .back-link {
+      display: inline-block;
+      margin-bottom: 0.8rem;
+      font-size: 0.85rem;
+      color: #7a7a7a;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: #3a3a3a;
+    }
+
     .header h1 {
       font-size: 2.4rem;
       letter-spacing: 0.12em;
@@ -103,6 +117,42 @@
       letter-spacing: 0.04em;
     }
 
+    .iframe-section {
+      position: relative;
+      background: url('https://vinera.at/_assets/media/ca620ae5145f3dcf596f6f0d2a99f5d9.jpg') center / cover no-repeat fixed;
+    }
+
+    .iframe-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .iframe-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .iframe-wrap h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: #3a3a3a;
+    }
+
+    .iframe-wrap iframe {
+      width: 100%;
+      height: 750px;
+      border: 1px solid #b5b0a8;
+      border-radius: 10px;
+      background: #fff;
+    }
+
     .info-bar {
       display: flex;
       flex-wrap: wrap;
@@ -111,6 +161,7 @@
       padding: 1.2rem 1rem;
       background: #fff;
       border-bottom: 1px solid #e8e4df;
+      border-top: 1px solid #e8e4df;
       font-size: 0.88rem;
       color: #5a5a5a;
     }
@@ -136,29 +187,6 @@
 
     .info-bar a:hover {
       text-decoration: underline;
-    }
-
-    .iframe-wrap {
-      width: 100%;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
-    }
-
-    .iframe-wrap h2 {
-      text-align: center;
-      font-size: 1.6rem;
-      letter-spacing: 0.06em;
-      margin-bottom: 1rem;
-      color: #3a3a3a;
-    }
-
-    .iframe-wrap iframe {
-      width: 100%;
-      height: 750px;
-      border: 1px solid #e8e4df;
-      border-radius: 4px;
-      background: #fff;
     }
 
     .footer {
@@ -197,9 +225,23 @@
 <body>
 
   <header class="header">
-    <h1>VinerA</h1>
+    <a href="https://vinera.at" class="back-link">&larr; Zurück zur Homepage</a>
+    <h1>Vinera</h1>
     <p>Italien mitten in Melk &middot; Genuss beginnt hier</p>
   </header>
+
+  <section class="iframe-section">
+    <main class="iframe-wrap">
+      <h2>Tisch reservieren</h2>
+      <iframe
+        src="https://reservier.at/de/vinera"
+        title="Online-Reservierung Vinera Restaurant"
+        loading="lazy"
+        allow="clipboard-write"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+  </section>
 
   <nav class="info-bar" aria-label="Restaurantinformationen">
     <div class="group">
@@ -221,20 +263,11 @@
     </div>
   </nav>
 
-  <main class="iframe-wrap">
-    <h2>Tisch reservieren</h2>
-    <iframe
-      src="https://www.reservier.at/de/vinera"
-      title="Online-Reservierung VinerA Restaurant"
-      loading="lazy"
-      allow="clipboard-write"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </main>
-
   <footer class="footer">
-    &copy; 2026 VinerA &middot;
+    &copy; 2026 Vinera &middot;
     <a href="https://vinera.at">vinera.at</a>
+    <span class="sep">&middot;</span>
+    Online-Reservierung by <a href="https://reservier.at/de/">reservier.at</a>
   </footer>
 
 </body>
