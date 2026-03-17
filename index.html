@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reservierung – Vinera | Italienisches Restaurant in Melk</title>
-  <meta name="description" content="Reservieren Sie Ihren Tisch im Vinera – Italienisches Restaurant in Melk. Öffnungszeiten: Di–Do & So 07:30–14:00, Fr & Sa 07:30–20:30. Jetzt online reservieren!">
-  <meta name="keywords" content="Vinera, Reservierung, Restaurant Melk, Italienisches Restaurant, Tisch reservieren, Melk, Schrattenbruck">
+  <meta name="description"
+    content="Reservieren Sie Ihren Tisch im Vinera – Italienisches Restaurant in Melk. Öffnungszeiten: Di–Do & So 07:30–14:00, Fr & Sa 07:30–20:30. Jetzt online reservieren!">
+  <meta name="keywords"
+    content="Vinera, Reservierung, Restaurant Melk, Italienisches Restaurant, Tisch reservieren, Melk, Schrattenbruck">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://reservieren.vinera.at/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Tisch reservieren – Vinera Restaurant Melk">
-  <meta property="og:description" content="Reservieren Sie jetzt Ihren Tisch im Vinera – Italienisches Restaurant in Melk.">
+  <meta property="og:description"
+    content="Reservieren Sie jetzt Ihren Tisch im Vinera – Italienisches Restaurant in Melk.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://reservieren.vinera.at/">
   <meta property="og:locale" content="de_AT">
@@ -20,7 +24,9 @@
   <!-- Fonts: Cormorant Garamond (display) + Lato (body) — close to vinera.at's clean aesthetic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -59,7 +65,9 @@
   </script>
 
   <style>
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -73,11 +81,13 @@
       font-family: 'Lato', sans-serif;
       font-weight: 300;
       color: #2c2c2c;
-      background: #faf9f7;
+      background: #032B22;
       -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 400;
     }
@@ -85,22 +95,29 @@
     .header {
       text-align: center;
       padding: 2.5rem 1rem 1.5rem;
-      background: #fff;
-      border-bottom: 1px solid #e8e4df;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 0.8rem;
-      font-size: 0.85rem;
-      color: #7a7a7a;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      transition: color 0.2s;
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.35rem;
+      padding: 1.4rem 1.8rem;
     }
 
-    .back-link:hover {
-      color: #3a3a3a;
+    .navbar a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: #F0EBE5;
+      text-decoration: underline;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: opacity 0.2s;
+    }
+
+    .navbar a:hover {
+      opacity: 0.6;
     }
 
     .header h1 {
@@ -117,39 +134,16 @@
       letter-spacing: 0.04em;
     }
 
-    .iframe-section {
-      position: relative;
-      background: url('https://vinera.at/_assets/media/ca620ae5145f3dcf596f6f0d2a99f5d9.jpg') center / cover no-repeat fixed;
-    }
-
-    .iframe-section::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.3);
-    }
 
     .iframe-wrap {
-      position: relative;
       width: 100%;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
-    }
-
-    .iframe-wrap h2 {
-      text-align: center;
-      font-size: 1.6rem;
-      letter-spacing: 0.06em;
-      margin-bottom: 1rem;
-      color: #3a3a3a;
     }
 
     .iframe-wrap iframe {
+      display: block;
       width: 100%;
-      height: 750px;
-      border: 1px solid #b5b0a8;
-      border-radius: 10px;
+      height: 100vh;
+      border: none;
       background: #fff;
     }
 
@@ -157,13 +151,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem 3rem;
-      padding: 1.2rem 1rem;
-      background: #fff;
-      border-bottom: 1px solid #e8e4df;
-      border-top: 1px solid #e8e4df;
-      font-size: 0.88rem;
-      color: #5a5a5a;
+      gap: 3rem 5rem;
+      padding: 3.5rem 2rem;
+      background: #6b6159;
+      color: #e0dbd5;
+      font-size: 0.85rem;
+      line-height: 1.7;
     }
 
     .info-bar .group {
@@ -171,13 +164,20 @@
     }
 
     .info-bar strong {
-      font-weight: 700;
-      color: #3a3a3a;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      color: #f0ebe5;
       display: block;
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.6rem;
       text-transform: uppercase;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+    }
+
+    .info-bar .hours-label {
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #f0ebe5;
     }
 
     .info-bar a {
@@ -189,16 +189,29 @@
       text-decoration: underline;
     }
 
+    .info-bar .social-icon {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      fill: #e0dbd5;
+      transition: opacity 0.2s;
+    }
+
+    .info-bar .social-icon:hover {
+      opacity: 0.6;
+    }
+
     .footer {
       text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.78rem;
-      color: #aaa;
-      border-top: 1px solid #e8e4df;
+      padding: 1.2rem 1rem;
+      font-size: 0.75rem;
+      color: #b0aaa2;
+      background: #6b6159;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .footer a {
-      color: #888;
+      color: #ccc7c0;
       text-decoration: none;
     }
 
@@ -212,63 +225,77 @@
       }
 
       .info-bar {
-        gap: 1rem 1.5rem;
-        font-size: 0.82rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
       }
 
       .iframe-wrap iframe {
-        height: 600px;
+        height: 100vh;
       }
     }
   </style>
 </head>
+
 <body>
 
+  <nav class="navbar" aria-label="Hauptnavigation">
+    <a href="https://vinera.at/restaurant">Restaurant</a>
+    <a href="https://reservieren.vinera.at/">Reservieren</a>
+    <a href="https://vinera.at/kontakt">Kontakt</a>
+    <a href="https://vinera.at/team">Team</a>
+  </nav>
+  <!-- 
   <header class="header">
-    <a href="https://vinera.at" class="back-link">&larr; Zurück zur Homepage</a>
     <h1>Vinera</h1>
     <p>Italien mitten in Melk &middot; Genuss beginnt hier</p>
-  </header>
+  </header> -->
 
-  <section class="iframe-section">
+  <section class="iframe-section" style="width: 100%;">
     <main class="iframe-wrap">
-      <h2>Tisch reservieren</h2>
-      <iframe
-        src="https://reservier.at/de/vinera"
-        title="Online-Reservierung Vinera Restaurant"
-        loading="lazy"
-        allow="clipboard-write"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <iframe src="https://reservier.at/de/vinera" title="Online-Reservierung für Vinera" loading="lazy"
+        allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
   </section>
-
+<!-- 
   <nav class="info-bar" aria-label="Restaurantinformationen">
     <div class="group">
-      <strong>Öffnungszeiten</strong>
-      Di–Do &amp; So: 07:30–14:00<br>
-      Fr &amp; Sa: 07:30–20:30<br>
-      Mo: Ruhetag
-    </div>
-    <div class="group">
-      <strong>Adresse</strong>
+      <strong>So Erreichen Sie uns:</strong>
       <a href="https://maps.google.com/?q=Weierbachweg+2+3390+Melk" target="_blank" rel="noopener">
-        Weierbachweg 2, 3390 Melk
-      </a>
-    </div>
-    <div class="group">
-      <strong>Kontakt</strong>
+        Weierbachweg 2<br>
+        3390 Melk/Schrattenbruck
+      </a><br>
       <a href="tel:+436601144711">+43 660 1144711</a><br>
       <a href="mailto:office@vinera.at">office@vinera.at</a>
     </div>
-  </nav>
+    <div class="group">
+      <strong>Unsere Küche ist für Sie da:</strong>
+      <span class="hours-label">Dienstag bis Donnerstag &amp; Sonntag</span><br>
+      07:30 – 14:00<br>
+      <span class="hours-label">Freitag und Samstag</span><br>
+      07:30 – 20:30<br>
+      <span class="hours-label">Montag</span><br>
+      Ruhetag
+    </div>
+    <div class="group">
+      <strong>Mehr von uns:</strong>
+      <a href="https://www.instagram.com/vinera.at/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.088 4.088 0 011.47.957c.453.453.777.884.957 1.47.163.46.35 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.088 4.088 0 01-.957 1.47 4.088 4.088 0 01-1.47.957c-.46.163-1.26.35-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.088 4.088 0 01-1.47-.957 4.088 4.088 0 01-.957-1.47c-.163-.46-.35-1.26-.403-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.088 4.088 0 01.957-1.47A4.088 4.088 0 015.063 2.293c.46-.163 1.26-.35 2.43-.403C8.759 1.832 9.139 1.82 12 1.82zm0-1.657C8.741.163 8.333.175 7.053.234 5.775.293 4.905.49 4.14.81a5.882 5.882 0 00-2.126 1.384A5.882 5.882 0 00.63 4.32C.31 5.085.113 5.955.054 7.233.005 8.513-.007 8.921-.007 12.18s.012 3.667.07 4.947c.06 1.278.256 2.148.576 2.913a5.882 5.882 0 001.384 2.126 5.882 5.882 0 002.126 1.384c.765.32 1.635.516 2.913.576 1.28.059 1.688.07 4.947.07s3.667-.012 4.947-.07c1.278-.06 2.148-.256 2.913-.576a5.882 5.882 0 002.126-1.384 5.882 5.882 0 001.384-2.126c.32-.765.516-1.635.576-2.913.059-1.28.07-1.688.07-4.947s-.012-3.667-.07-4.947c-.06-1.278-.256-2.148-.576-2.913a5.882 5.882 0 00-1.384-2.126A5.882 5.882 0 0019.86.63C19.095.31 18.225.113 16.947.054 15.667.005 15.259-.007 12-.007zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+        </svg>
+      </a>
+    </div>
+  </nav> -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     &copy; 2026 Vinera &middot;
     <a href="https://vinera.at">vinera.at</a>
     <span class="sep">&middot;</span>
     Online-Reservierung by <a href="https://reservier.at/de/">reservier.at</a>
-  </footer>
+  </footer> -->
 
 </body>
+
 </html>
